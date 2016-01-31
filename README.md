@@ -1,9 +1,13 @@
 # Vert.x Example Maven Project
 
-Example project for creating a Vert.x module with a Gradle build.
+Example project for creating a Vert.x module with maven.
 
-By default this module contains a simple Java verticle which listens on the event bus and responds to `ping!`
-messages with `pong!`.
+this is a chat app.
+With both Server and client, console and Fx client.
 
-This example also shows you how to write tests in Java, Groovy, Ruby and Python
+start server with maven:
+- package vertx:runMod
 
+start client
+- Console: run ConsoleChatClient as java app
+- FX app: run GuiChatClient (as java app)
