@@ -1,0 +1,80 @@
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sebhero.tutorial.client.gui.ChatController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="exitItem" mnemonicParsing="false" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="?">
+                    <items>
+                        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox prefHeight="371.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+            <children>
+                <Separator orientation="VERTICAL" prefHeight="50.0" visible="false" />
+                <Label text="Username" />
+                <TextField fx:id="userNameTextfield" />
+                <Separator orientation="VERTICAL" prefHeight="50.0" visible="false" />
+                <Label text="Chatroom" />
+                <ChoiceBox fx:id="roomSelection" prefWidth="150.0" />
+                <Separator orientation="VERTICAL" prefHeight="50.0" visible="false" />
+                <Button fx:id="connectButton" mnemonicParsing="false" text="Connect" />
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <ListView fx:id="chatListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <VBox prefHeight="83.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField id="messageTextField" fx:id="messageTextField" prefHeight="40.0" prefWidth="281.0" />
+                        <Button fx:id="chatButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Send">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin></Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="126.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label prefHeight="33.0" prefWidth="177.0" text="Micha Kops - www.hascode.com" textFill="#9e9e9e">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="300.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </VBox>
+    </bottom>
+    <right>
+        <Pane prefHeight="334.0" prefWidth="18.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>
