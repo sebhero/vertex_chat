@@ -1,6 +1,5 @@
 package com.sebhero.tutorial.unit;
 
-import com.sebhero.tutorial.PingVerticle;
 import org.junit.Test;
 
 /*
